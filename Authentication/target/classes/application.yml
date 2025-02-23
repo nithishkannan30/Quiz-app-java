@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: quizApp
+  main:
+     allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/QuizApp
+    username: user
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8089
+
